@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "."
+    "main-area"
+    "footer-area";
+}
+
+.main-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.main-content {
+  grid-area: main-area;
+}
+
+.main-footer {
+  grid-area: footer-area;
+}
