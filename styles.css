@@ -17,6 +17,7 @@ body {
 }
 
 .gray-font {
+  text-decoration: none;
   font-weight: 700;
   color: #c0c0c0;
   font-size: 0.8rem;
@@ -51,7 +52,7 @@ body {
 .lower-nav_links a {
   text-decoration: none;
   color: #808080;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 
@@ -67,7 +68,9 @@ body {
 }
 
 .main-nav__links1 a:hover,
-.main-nav__links2 a:hover {
+.main-nav__links2 a:hover,
+.main-article_description a:hover,
+.side-bar_details a:hover {
   color: #fff;
 }
 
@@ -106,9 +109,10 @@ body {
 .main-article {
   width: 70%;
   height: 28.5rem;
-  background-image: url("images/cover-gradient.png"), url("images/google-logo.png");
-  background-repeat: no-repeat, no-repeat;
-  background-size: cover, cover;
+  background-image: url("images/cover-gradient.png"), url("images/image-gradient.png"), url("images/google-logo.png");
+  background-repeat: no-repeat, repeat,no-repeat;
+  background-size: cover;
+  background-position: left 0% top 20%, left 0% top 70%, 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -144,12 +148,16 @@ body {
 .side-bar_1 {
   position: relative;
   margin-bottom: 0.5rem;
-  background-image: url("images/side-img_1.jpg");
+  background-image: url("images/image-gradient.png"), url("images/side-img_1.jpg");
+  background-size: cover;
+  background-position: left 0% top 65%, 100%;
 }
 
 .side-bar_2 {
   position: relative;
-  background-image: url("images/side-img2.png");
+  background-image: url("images/image-gradient.png"), url("images/side-img2.png");
+  background-size: cover;
+  background-position: left 0% top 65%, 100%;
 }
 
 .side-bar_1,
