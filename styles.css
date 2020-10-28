@@ -281,25 +281,52 @@ body {
   background-color: #fffaf8;
 }
 
+.latest-funding_img {
+  position: absolute;
+  margin: 0.5rem;
+}
+
+.latest-funding_img img {
+  max-width: 4rem;
+  max-height: 4rem;
+}
 .heading-artcls {
   background-color: #ff4422;
-  padding: 1rem;
+  padding: 1rem 0 1rem 5rem;
   color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .price-series {
   background-color: #ffebe8;
   padding: 1rem;
-  text-align: center;
+}
+
+.price-series p {
+  padding-left: 4rem;
+}
+
+.price-series p:first-of-type {
+  font-family: 'Roboto', sans-serif;
 }
 
 .latest-funding_details1 {
-  border-bottom: 1px solid #ffebe8;
+  border-bottom: 1px solid  #facec7;
   padding: 1rem;
 }
 
 .latest-funding_details2 {
   padding: 1rem;
+}
+
+.latest-funding__on {
+  color: #c0c0c0;
+  font-size: 0.75rem;
+}
+
+.latest-funding-font {
+  color: #808080;
 }
 
 .latest-funding__article2 {
