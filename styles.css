@@ -33,6 +33,10 @@ body {
   font-size: 1.8rem;
 }
 
+.tnw-custom_font {
+  color: #ff4422;
+}
+
 /* Header - Main Navigation */
 .main-nav {
   background-color: rgb(0, 0, 0);
@@ -234,4 +238,81 @@ body {
 .latest-news_imgs {
   width: 18rem;
   max-height: 8rem;
+}
+
+/* Latest Funding */
+.latest-funding{
+  width: 88%;
+  margin: 4rem auto;
+  display: grid;
+  grid-gap: 1.1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    "latest-funding_title latest-funding_title latest-funding_title latest-funding_title"
+    "latest-funding_art1 latest-funding_art2 latest-funding_art3 latest-funding_art4";
+}
+
+.lastest-funding_title {
+  grid-area: latest-funding_title;
+  display: flex;
+  justify-content: space-between;
+}
+
+.latest-funding_links {
+  list-style-type: none;
+}
+
+.latest-funding_links li, a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+  margin: 0 0.2rem;
+}
+
+.lastest-funding_custom-li {
+  border-left: 1.5px solid #ff4422;
+  border-right: 1.5px solid #ff4422;
+  padding: 0 0.6rem;
+}
+
+.latest-funding__article1 {
+  grid-area: latest-funding_art1;
+  background-color: #fffaf8;
+}
+
+.heading-artcls {
+  background-color: #ff4422;
+  padding: 1rem;
+  color: #fff;
+}
+
+.price-series {
+  background-color: #ffebe8;
+  padding: 1rem;
+  text-align: center;
+}
+
+.latest-funding_details1 {
+  border-bottom: 1px solid #ffebe8;
+  padding: 1rem;
+}
+
+.latest-funding_details2 {
+  padding: 1rem;
+}
+
+.latest-funding__article2 {
+  grid-area: latest-funding_art2;
+  background-color: #fffaf8;
+}
+
+.latest-funding__article3 {
+  grid-area: latest-funding_art3;
+  background-color: #fffaf8;
+}
+
+.latest-funding__article4 {
+  grid-area: latest-funding_art4;
+  background-color: #fffaf8;
 }
