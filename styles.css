@@ -6,19 +6,17 @@
   padding: 0;
 }
 
-html {
+html, body {
   max-width: 100vw;
 }
 
 body {
-  max-width: 100vw;
   /* display: grid;
   grid-template-rows: auto auto auto;
   grid-template-areas:
     "."
     "main-area"
     "footer-area"; */
-  height: 2000px;
 }
 
 .gray-font {
@@ -31,6 +29,17 @@ body {
 .custom-font {
   font-family: 'Roboto', sans-serif;
   font-size: 1.8rem;
+}
+
+.most-popular_font {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.popular__font {
+  color: #eeebeb;
+  font-weight: 500;
 }
 
 .tnw-custom_font {
@@ -108,6 +117,10 @@ body {
 }
 
 /* === Main Content Area === */
+.main-content {
+  max-width: 100%;
+}
+
 .main-section {
   background-color: #e0e0e0;
   padding: 0.5rem 0.5rem 0;
@@ -241,7 +254,7 @@ body {
 }
 
 /* Latest Funding */
-.latest-funding{
+.latest-funding {
   width: 88%;
   margin: 4rem auto;
   display: grid;
@@ -364,38 +377,175 @@ body {
   grid-area: hard-fork_heading;
 }
 
+.hard-fork_most-popular {
+  width: 368px;
+  height: 276px;
+  position: relative;
+}
+
+.most-popular_container {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: left;
+  line-height: 1.5rem;
+}
+
 .hard-fork_article1 {
   grid-area: hard-fork__artcl1-area;
+}
+
+.hard-fork_most-popular1 {
+  background-image: url("images/most-popular_img1.jpg");
+  background-size: cover;
 }
 
 .hard-fork_article2 {
   grid-area: hard-fork__artcl2-area;
 }
 
+.hard-fork_most-popular2 {
+  background-image: url("images/image-gradient.png"), url("images/most-popular_img2.png");
+  background-size: cover;
+  background-position: left 0% top 65%, 100%;
+}
+
 .hard-fork_article3 {
   grid-area: hard-fork__artcl3-area;
+}
+
+.hard-fork_most-popular3 {
+  background-image: url("images/image-gradient.png"), url("images/most-popular_img3.png");
+  background-size: cover;
+  background-position: left 0% top 65%, 100%;
 }
 
 .hard-fork_article4 {
   grid-area: hard-fork__artcl4-area;
 }
 
+.hard-fork_most-popular4 {
+  background-image: url("images/image-gradient.png"), url("images/most-popular_img4.jpg");
+  background-size: cover;
+  background-position: left 0% top 65%, 100%;
+}
+
 .hard-fork_article5 {
   grid-area: hard-fork__artcl5-area;
+}
+
+.hard-fork_most-popular5 {
+  background-image: url("images/image-gradient.png"), url("images/most-popular_img5.jpg");
+  background-size: cover;
+  background-position: left 0% top 65%, 100%;
 }
 
 .hard-fork_article6 {
   grid-area: hard-fork__artcl6-area;
 }
 
+.hard-fork_most-popular6 {
+  background-image: url("images/image-gradient.png"), url("images/most-popular_img6.png");
+  background-size: cover;
+  background-position: left 0% top 65%, 100%;
+}
+
 .hard-fork_article7 {
   grid-area: hard-fork__artcl7-area;
+}
+
+.hard-fork_most-popular7 {
+  background-image: url("images/image-gradient.png"), url("images/most-popular_img7.jpg");
+  background-size: cover;
+  background-position: left 0% top 65%, 100%;
 }
 
 .hard-fork_article8 {
   grid-area: hard-fork__artcl8-area;
 }
 
+.hard-fork_most-popular8 {
+  background-image: url("images/image-gradient.png"), url("images/most-popular_img8.jpg");
+  background-size: cover;
+  background-position: left 0% top 65%, 100%;
+}
+
 .hard-fork_article9 {
   grid-area: hard-fork__artcl9-area;
+}
+
+.hard-fork_most-popular9 {
+  background-image: url("images/image-gradient.png"), url("images/most-popular_img9.jpg");
+  background-size: cover;
+  background-position: left 0% top 65%, 100%;
+}
+
+/* Latest Deals Section */
+.latest-deals {
+  width: 88%;
+  margin: auto;
+  display: grid;
+  grid-gap: 2rem 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "top-head top-head top-head top-head"
+    "ld-heading ld-heading ld-heading ld-heading"
+    "latest_deal1-area latest_deal2-area latest_deal3-area latest_deal4-area"
+    "latest_deal5-area latest_deal6-area latest_deal7-area latest_deal8-area";
+}
+
+.latest-deals_top-heading {
+  grid-area: top-head;
+  display: none;
+}
+
+.latest-deal__heading {
+  grid-area: ld-heading;
+  display: flex;
+  justify-content: space-between;
+}
+
+.latest-deals_image {
+  max-width: 17rem;
+  max-height: 12rem;
+}
+
+.latest-deals_image img {
+  max-width: 17rem;
+  max-height: 12rem;
+}
+
+.latest__deal1 {
+  grid-area: latest_deal1-area;
+}
+
+.latest__deal2 {
+  grid-area: latest_deal2-area;
+}
+
+.latest__deal3 {
+  grid-area: latest_deal3-area;
+}
+
+.latest__deal4 {
+  grid-area: latest_deal4-area;
+}
+
+.latest__deal5 {
+  grid-area: latest_deal5-area;
+}
+
+.latest__deal6 {
+  grid-area: latest_deal6-area;
+}
+
+.latest__deal7 {
+  grid-area: latest_deal7-area;
+}
+
+.latest__deal8 {
+  grid-area: latest_deal8-area;
 }
