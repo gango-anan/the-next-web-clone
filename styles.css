@@ -54,6 +54,10 @@ html, body {
   color: #ff4422;
 }
 
+.ion-font_size {
+  font-size: 1.5rem;
+}
+
 .ul-no-style {
   list-style: none;
 }
@@ -231,24 +235,50 @@ html, body {
     "article5_area article6_area article7_area article8_area";
 }
 
+.latest-news__font {
+  font-size: 0.8rem;
+  color: #b6b1b1;
+}
+
 .latest-news_heading {
   grid-area: heading;
 }
 
+.latest-news p, h4 {
+  margin-top: 0.5rem;
+}
+
+.latest-news h4 a:hover {
+  text-decoration: underline;
+  color: #ff4422;
+}
+
+.latest-news p a:hover {
+  color: #706c6c;
+}
+
+.custom_hover a:hover {
+  color: #202020;
+}
+
 .latest-news_article1 {
   grid-area: article1_area;
+  margin-bottom: 1rem;
 }
 
 .latest-news_article2 {
   grid-area: article2_area;
+  margin-bottom: 1rem;
 }
 
 .latest-news_article3 {
   grid-area: article3_area;
+  margin-bottom: 1rem;
 }
 
 .latest-news_article4 {
   grid-area: article4_area;
+  margin-bottom: 1rem;
 }
 
 .latest-news_article5 {
@@ -300,6 +330,10 @@ html, body {
   display: inline-block;
   color: inherit;
   margin: 0 0.2rem;
+}
+
+.latest-funding_links li a:hover {
+  color: #333232;
 }
 
 .lastest-funding_custom-li {
@@ -515,6 +549,10 @@ html, body {
   line-height: 1.3rem;
 }
 
+.hard-fork__latest_title-container a:hover {
+  text-decoration: underline;
+}
+
 .hard-fork__latest_img-container {
   height: 6rem;
   width: 6rem;
@@ -589,6 +627,10 @@ html, body {
   margin-right: 0.5rem;
 }
 
+.hard-fork__list a:hover {
+  color: #202020;
+}
+
 /* Latest Deals Section */
 .latest-deals {
   padding-top: 4rem;
@@ -605,6 +647,9 @@ html, body {
     "latest_deal5-area latest_deal6-area latest_deal7-area latest_deal8-area";
 }
 
+.latest-deals p {
+  margin-top: 0.5rem;
+}
 .latest-deals_top-heading {
   grid-area: top-head;
   display: none;
@@ -616,30 +661,29 @@ html, body {
   justify-content: space-between;
 }
 
-.latest-deals_image {
-  max-width: 17rem;
-  max-height: 12rem;
-}
-
 .latest-deals_image img {
-  max-width: 17rem;
-  max-height: 12rem;
+  width: 18rem;
+  height: 12rem;
 }
 
 .latest__deal1 {
   grid-area: latest_deal1-area;
+  margin-bottom: 2rem;
 }
 
 .latest__deal2 {
   grid-area: latest_deal2-area;
+  margin-bottom: 2rem;
 }
 
 .latest__deal3 {
   grid-area: latest_deal3-area;
+  margin-bottom: 2rem;
 }
 
 .latest__deal4 {
   grid-area: latest_deal4-area;
+  margin-bottom: 2rem;
 }
 
 .latest__deal5 {
@@ -656,4 +700,72 @@ html, body {
 
 .latest__deal8 {
   grid-area: latest_deal8-area;
+}
+
+ins {
+  text-decoration: none;
+  color: #746e6e;
+}
+
+del {
+  color: #c0c0c0;
+}
+
+/* Footer */
+.main-footer {
+  grid-area: footer-area;
+  margin-top: 10rem;
+}
+
+.footer_top {
+  height: 10rem;
+  background-color: rgb(19, 19, 19);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-top_links1 {
+  margin-bottom: 1rem;
+}
+
+.footer-top_links1 li {
+  display: inline-block;
+  padding: 0.25rem;
+}
+
+.footer_top-d_img {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+}
+
+.footer-top_links2 li {
+  display: inline-block;
+  color: #8a8989;
+  font-weight: 550;
+  font-size: 0.75rem;
+}
+
+.footer_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6.25rem;
+  background-color: rgb(0, 0, 0);
+}
+
+.footer_bottom p {
+  color: #8a8989;
+  font-size: 0.75rem;
+  font-weight: 550;
+}
+
+.stack-path_font {
+  color: white;
+}
+
+.footer_logo-img {
+  width: 48px
 }
