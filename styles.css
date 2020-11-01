@@ -956,7 +956,11 @@ ins {
   max-width: 48px;
 }
 
-@media (min-width) {
+@media (min-width: 415px) {
+  .footer_bottom p {
+    font-size: 0.7rem;
+  }
+
   .footer_bottom {
     display: flex;
     align-items: center;
