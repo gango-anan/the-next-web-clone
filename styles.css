@@ -7,7 +7,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   max-width: 100vw;
   font-size: 70%;
 }
@@ -24,6 +25,10 @@ body {
 /****
 Typography
 ********/
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .main-p__font {
   font-size: 1.2rem;
 }
@@ -59,7 +64,7 @@ Typography
 }
 
 .tnw-custom_font {
-  color: #ff4422;
+  color: #f42;
 }
 
 .ion-font_size {
@@ -98,18 +103,26 @@ Typography
   font-weight: 500;
 }
 
+.custom_hover a:hover {
+  color: #202020;
+}
+
+.hard-fork__latest_title-container a:hover {
+  text-decoration: underline;
+}
+
+.hard-fork__list a:hover {
+  color: #202020;
+}
+
 .latest-news h4 a:hover,
 .latest-deals a:hover {
   text-decoration: underline;
-  color: #ff4422;
+  color: #f42;
 }
 
 .latest-news p a:hover {
   color: #706c6c;
-}
-
-.custom_hover a:hover {
-  color: #202020;
 }
 
 .latest-news__font {
@@ -217,7 +230,7 @@ ins {
 
 .main-article {
   background-image: url("images/cover-gradient.png"), url("images/image-gradient.png"), url("images/google-logo.png");
-  background-repeat: no-repeat, repeat,no-repeat;
+  background-repeat: no-repeat, repeat, no-repeat;
   background-size: cover;
   background-position: left 0% top 20%, left 0% top 70%, 100%;
   max-height: 28.5rem;
@@ -306,8 +319,7 @@ ins {
   max-width: 100px;
 }
 
-/*=== Latest Funding ====*/
-
+/* === Latest Funding ==== */
 .latest-funding {
   width: 90%;
   margin: auto;
@@ -315,11 +327,6 @@ ins {
 
 .latest-funding_links {
   list-style-type: none;
-}
-
-.latest-funding_links li, a {
-  text-decoration: none;
-  color: inherit;
 }
 
 .latest-funding_links li a:hover {
@@ -344,8 +351,9 @@ ins {
   width: 100%;
   max-width: 4rem;
 }
+
 .heading-artcls {
-  background-color: #ff4422;
+  background-color: #f42;
   padding: 1rem 0 1rem 5rem;
 }
 
@@ -483,15 +491,11 @@ ins {
   line-height: 1.1rem;
 }
 
-.hard-fork__latest_title-container a:hover {
-  text-decoration: underline;
-}
-
-.hard-fork__latest_img-container{
+.hard-fork__latest_img-container {
   float: right;
 }
 
-.hard-fork__latest_img-container img{
+.hard-fork__latest_img-container img {
   width: 100%;
   max-width: 6rem;
   min-height: 7rem;
@@ -507,12 +511,8 @@ ins {
 
 .hard-fork__list li a::before {
   content: "\2022";
-  color: #ff4422;
+  color: #f42;
   margin-right: 0.5rem;
-}
-
-.hard-fork__list a:hover {
-  color: #202020;
 }
 
 /* Latest Deals Section */
@@ -619,11 +619,12 @@ ins {
   max-width: 48px;
 }
 
-/*===========
+/* ===========
 Media Queries
-=============*/
+============= */
 @media (min-width: 415px) {
-  html, body {
+  html,
+  body {
     font-size: 80%;
   }
 
@@ -634,6 +635,10 @@ Media Queries
       "."
       "main-area"
       "footer-area";
+  }
+
+  .news a {
+    color: #fff;
   }
 
   .gray-font {
@@ -677,14 +682,7 @@ Media Queries
     align-items: center;
     border: solid #c0c0c0 1px;
   }
-  
-  .main-nav__links1 a:hover,
-  .main-nav__links2 a:hover,
-  .main-article_description a:hover,
-  .side-bar_details a:hover {
-    color: #fff;
-  }
-  
+
   .main-nav__links1 li,
   .main-nav__links1 a,
   .main-nav__links2 li,
@@ -697,7 +695,10 @@ Media Queries
     font-weight: 600;
   }
   
-  .news a {
+  .main-nav__links1 a:hover,
+  .main-nav__links2 a:hover,
+  .main-article_description a:hover,
+  .side-bar_details a:hover {
     color: #fff;
   }
 
@@ -733,7 +734,8 @@ Media Queries
     display: flex;
     flex-direction: column;
   }
-/**Latest News **/
+
+/* ==Latest News == */
   .latest-news h4 {
     font-size: 0.9rem;
   }
@@ -749,7 +751,7 @@ Media Queries
     grid-gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
-    grid-template-areas: 
+    grid-template-areas:
       "heading heading heading"
       "article1_area article2_area article3_area"
       "article4_area article5_area article6_area"
@@ -764,34 +766,34 @@ Media Queries
     grid-area: article1_area;
     margin-bottom: 1rem;
   }
-  
+
   .latest-news_article2 {
     grid-area: article2_area;
     margin-bottom: 1rem;
   }
-  
+
   .latest-news_article3 {
     grid-area: article3_area;
     margin-bottom: 1rem;
   }
-  
+
   .latest-news_article4 {
     grid-area: article4_area;
     margin-bottom: 1rem;
   }
-  
+
   .latest-news_article5 {
     grid-area: article5_area;
   }
-  
+
   .latest-news_article6 {
     grid-area: article6_area;
   }
-  
+
   .latest-news_article7 {
     grid-area: article7_area;
   }
-  
+
   .latest-news_article8 {
     grid-area: article8_area;
   }
@@ -800,12 +802,12 @@ Media Queries
     float: none;
     margin-right: 0;
   }
-  
+
   .latest-news_imgs {
     max-width: 284px;
   }
 
-/**Latest Funding**/
+/* ==Latest Funding== */
   .custom-font {
     font-size: 1.8rem;
   }
@@ -830,18 +832,18 @@ Media Queries
     align-items: center;
   }
 
-  .latest-funding_links li, a {
+  .latest-funding_links li{
     display: inline-block;
     margin: 0 0.2rem;
   }
 
   .lastest-funding_custom-li {
-    border-left: 1.5px solid #ff4422;
-    border-right: 1.5px solid #ff4422;
+    border-left: 1.5px solid #f42;
+    border-right: 1.5px solid #f42;
     padding: 0 0.6rem;
   }
 
-/***Hard Fork***/
+/* **Hard Fork** */
   .latest_custom-font {
     font-size: 0.9rem;
   }
@@ -915,11 +917,11 @@ Media Queries
     grid-area: hard-fork__artcl9-area;
   }
 
-/**Latest Deals**/
+/* Latest Deals */
   del {
     font-size: 0.7rem;
   }
-  
+
   ins {
     font-size: 0.9rem;
   }
@@ -942,6 +944,7 @@ Media Queries
   .latest-deals_top-heading {
     grid-area: top-head;
   }
+
   .latest-deal__heading {
     grid-area: ld-heading;
     display: flex;
@@ -995,7 +998,7 @@ Media Queries
     max-width: 284px;
   }
   
-/**Main Footer**/
+/* Main Footer */
   .footer_bottom p {
     font-size: 0.7rem;
   }
@@ -1020,7 +1023,7 @@ Media Queries
     padding: 1.5rem;
   }
 
-/**Latest News **/
+/* Latest News */
   .latest-news {
     grid-template-columns: repeat(4, minmax(0, 17.75rem));
     grid-template-rows: repeat(3, auto);
@@ -1030,7 +1033,7 @@ Media Queries
       "article5_area article6_area article7_area article8_area";
   }
 
-/**Latest Funding**/
+/* Latest Funding */
   .latest-funding {
     grid-template-columns: repeat(4, minmax(0, 17.75rem));
     grid-template-rows: repeat(2, auto);
@@ -1039,7 +1042,7 @@ Media Queries
       "latest-funding_art1 latest-funding_art2 latest-funding_art3 latest-funding_art4";
   }
 
-/***Hard Fork***/
+/* Hard Fork */
   .hard-fork {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
@@ -1050,7 +1053,7 @@ Media Queries
       "hard-fork__artcl7-area hard-fork__artcl8-area hard-fork__artcl9-area";
   }
 
-/**Latest Deals**/
+/* Latest Deals */
 
   .latest-deals {
     grid-template-columns: repeat(4, minmax(0, 17.75rem));
@@ -1062,7 +1065,7 @@ Media Queries
       "latest_deal5-area latest_deal6-area latest_deal7-area latest_deal8-area";
   }
 
-/**Main Footer**/
+/* Main Footer */
   .footer_bottom p {
     font-size: 0.7rem;
   }
