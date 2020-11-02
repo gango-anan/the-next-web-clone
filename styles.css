@@ -634,6 +634,7 @@ ins {
   width: 100%;
   max-width: 48px;
 }
+
 /*===========
 Media Queries
 =============*/
@@ -663,9 +664,6 @@ Media Queries
   }
 
   .logo {
-    /* display: flex;
-    justify-content: space-between;
-    padding: 1.5rem; */
     display: none;
   }
 
@@ -753,6 +751,7 @@ Media Queries
   .latest-news_imgs {
     max-width: 284px;
   }
+
 /**Latest Funding**/
   .custom-font {
     font-size: 1.8rem;
@@ -762,7 +761,7 @@ Media Queries
     width: 88%;
     margin: 4rem auto;
     display: grid;
-    grid-gap: 1.1rem;
+    grid-gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
@@ -788,8 +787,8 @@ Media Queries
     border-right: 1.5px solid #ff4422;
     padding: 0 0.6rem;
   }
+
 /***Hard Fork***/
-/* @media (min-width: 415px) { */
   .latest_custom-font {
     font-size: 0.9rem;
   }
@@ -814,7 +813,7 @@ Media Queries
     grid-gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, auto);
-    grid-template-areas: 
+    grid-template-areas:
       "hard-fork_heading hard-fork_heading"
       "hard-fork__artcl1-area hard-fork__artcl2-area"
       "hard-fork__artcl3-area hard-fork__artcl4-area"
@@ -862,6 +861,7 @@ Media Queries
   .hard-fork_article9 {
     grid-area: hard-fork__artcl9-area;
   }
+
 /**Latest Deals**/
   del {
     font-size: 0.7rem;
@@ -875,7 +875,7 @@ Media Queries
     width: 88%;
     margin: auto;
     display: grid;
-    grid-gap: 1rem 1rem;
+    grid-gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, auto);
     grid-template-areas:
@@ -903,22 +903,18 @@ Media Queries
 
   .latest__deal1 {
     grid-area: latest_deal1-area;
-    margin-bottom: 2rem;
   }
 
   .latest__deal2 {
     grid-area: latest_deal2-area;
-    margin-bottom: 2rem;
   }
 
   .latest__deal3 {
     grid-area: latest_deal3-area;
-    margin-bottom: 2rem;
   }
 
   .latest__deal4 {
     grid-area: latest_deal4-area;
-    margin-bottom: 2rem;
   }
 
   .latest__deal5 {
@@ -945,6 +941,7 @@ Media Queries
   .latest-deals_image img {
     max-width: 284px;
   }
+  
 /**Main Footer**/
   .footer_bottom p {
     font-size: 0.7rem;
