@@ -560,7 +560,7 @@ ins {
 
 .latest-deals_image img {
   width: 100%;
-  max-width: 120px;
+  max-width: 100px;
 }
 
 .latest__deal1,
@@ -941,7 +941,7 @@ Media Queries
   .latest-deals_image img {
     max-width: 284px;
   }
-
+  
 /**Main Footer**/
   .footer_bottom p {
     font-size: 0.7rem;
