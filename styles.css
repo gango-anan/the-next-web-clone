@@ -29,6 +29,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 .main-p__font {
   font-size: 1.2rem;
 }
@@ -103,6 +104,10 @@ a {
   font-weight: 500;
 }
 
+.lower-nav_links a:hover {
+  color: #202020;
+}
+
 .custom_hover a:hover {
   color: #202020;
 }
@@ -115,8 +120,8 @@ a {
   color: #202020;
 }
 
-.latest-news h4 a:hover,
-.latest-deals a:hover {
+.latest-deals a:hover,
+.latest-news h4 a:hover {
   text-decoration: underline;
   color: #f42;
 }
@@ -191,16 +196,12 @@ ins {
 }
 
 .menu {
-  color: #ff4422;
+  color: #f42;
 }
 
 .search-ion,
 .menu-ion {
   padding: 12px;
-}
-
-.lower-nav_links a:hover {
-  color: #202020;
 }
 
 .lower-nav_search {
@@ -526,7 +527,7 @@ ins {
   display: none;
 }
 
-.latest-deals p {
+.latest-deals-p {
   margin-top: 0.5rem;
 }
 
@@ -694,7 +695,7 @@ Media Queries
     font-size: 0.8rem;
     font-weight: 600;
   }
-  
+
   .main-nav__links1 a:hover,
   .main-nav__links2 a:hover,
   .main-article_description a:hover,
@@ -880,7 +881,7 @@ Media Queries
   .hard-fork_heading {
     grid-area: hard-fork_heading;
   }
-      
+
   .hard-fork_article1 {
     grid-area: hard-fork__artcl1-area;
   }
@@ -951,12 +952,6 @@ Media Queries
     justify-content: space-between;
   }
 
-  .latest-deal__heading {
-    grid-area: ld-heading;
-    display: flex;
-    justify-content: space-between;
-  }
-
   .latest__deal1 {
     grid-area: latest_deal1-area;
   }
@@ -997,7 +992,7 @@ Media Queries
   .latest-deals_image img {
     max-width: 284px;
   }
-  
+
 /* Main Footer */
   .footer_bottom p {
     font-size: 0.7rem;
@@ -1013,7 +1008,8 @@ Media Queries
 }
 
 @media (min-width: 769px) {
-  html, body {
+  html,
+  body {
     font-size: 16px;
   }
 
@@ -1046,7 +1042,7 @@ Media Queries
   .hard-fork {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
-    grid-template-areas: 
+    grid-template-areas:
       "hard-fork_heading hard-fork_heading hard-fork_heading"
       "hard-fork__artcl1-area hard-fork__artcl2-area hard-fork__artcl3-area"
       "hard-fork__artcl4-area hard-fork__artcl5-area hard-fork__artcl6-area"
