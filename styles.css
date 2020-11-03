@@ -10,7 +10,7 @@
 html,
 body {
   max-width: 100vw;
-  font-size: 70%;
+  font-size: 90%;
 }
 
 body {
@@ -50,7 +50,7 @@ a {
 .custom-font {
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
-  font-size: 2.5rem;
+  font-size: 1.3rem;
 }
 
 .most-popular_font {
@@ -74,7 +74,7 @@ a {
 
 .latest-funding__on {
   color: #c0c0c0;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
 }
 
 .latest_custom-font {
@@ -264,7 +264,7 @@ Structure
 
 .main-article_description h2 {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 /*** Side Bar ***/
@@ -328,7 +328,8 @@ Structure
 
 .latest-news_imgs {
   width: 100%;
-  height: 100px;
+  max-width: 80px;
+  height: 80px;
 }
 
 .float-left {
@@ -337,10 +338,6 @@ Structure
 
 .float-right {
   float: right;
-}
-
-.set-width_100 {
-  width: 100%;
 }
 
 .latest-news article::after {
