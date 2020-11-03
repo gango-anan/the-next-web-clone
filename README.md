@@ -59,7 +59,7 @@ This repository contains a project which consists of a responsive clone of The N
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://gango-anan.github.io/design-teardown/issues).
+Feel free to check the [issues page](https://github.com/gango-anan/the-next-web-clone/issues).
 
 
 ## Show your support
