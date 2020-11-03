@@ -159,6 +159,7 @@ ins {
 /* =======
 Structure
 ========== */
+
 /* Header - Main Navigation */
 .main-header {
   background-color: #fff;
@@ -563,7 +564,6 @@ Structure
 
 .latest-deals_image {
   width: 100px;
-  /* max-height: 100px; */
 }
 
 .latest-deals_image img {
@@ -834,13 +834,13 @@ Media Queries
   .latest-news_article8 {
     grid-area: article8_area;
   }
-  
+
   .latest-news p,
   .latest-news h4 {
     width: 100%;
     padding-left: 0;
   }
-  
+
   .latest-news_imgs-container {
     width: 100%;
   }
@@ -1037,13 +1037,13 @@ Media Queries
   }
 
   .deals-margin__bottom {
-    margin-bottom: 0rem;
+    margin-bottom: 0;
   }
   
   .deal-details {
-    margin-left: 0rem;
+    margin-left: 0;
   }
-  
+
   /* Main Footer */
   .footer_bottom p {
     font-size: 0.7rem;
