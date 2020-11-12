@@ -1040,8 +1040,8 @@ Media Queries
   
   .perc-off {
     display: inline-block;
-    transform: rotateZ(45deg);
-    transform-origin: 16px 32px;
+    transform: rotateZ(45deg) translateX(32px) translateY(8px);
+    transform-origin: center;
   }
 
   /* Main Footer */
