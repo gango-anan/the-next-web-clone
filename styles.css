@@ -559,6 +559,15 @@ Structure
   margin-top: 0.5rem;
 }
 
+.latest-deals_image {
+  background-image: url("images/latest_deal1.jpg");
+  background-position: cover;
+}
+
+.deals-off {
+  display: none;
+}
+
 /* Footer */
 .main-footer {
   grid-area: footer-area;
@@ -1009,6 +1018,30 @@ Media Queries
 
   .deal-details {
     margin-left: 0;
+  }
+
+  .custome-position {
+    position: relative;
+  }
+
+  .deals-off {
+    display: unset;
+    width: 40%;
+    max-width: 100px;
+    height: 60%;
+    max-height: 100px;
+    background-image: url("images/deals-ribbon.svg");
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+  }
+  
+  .perc-off {
+    display: inline-block;
+    transform: rotateZ(45deg);
+    transform-origin: 16px 32px;
   }
 
   /* Main Footer */
